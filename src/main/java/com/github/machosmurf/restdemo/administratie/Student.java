@@ -22,6 +22,7 @@ public class Student {
         return voornaam;
     }
 
+
     public String getAchternaam(){
         return achternaam;
     }
