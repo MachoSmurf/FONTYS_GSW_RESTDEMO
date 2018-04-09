@@ -11,6 +11,11 @@ public class Student {
     private String achternaam;
     private String wachtwoord;
 
+    public Student() {
+        this.studentNummer = getNextStudentNummer();
+        this.wachtwoord = "welkom123";
+    }
+
     public Student(String voornaam, String achternaam){
         this.voornaam = voornaam;
         this.achternaam = achternaam;
@@ -25,6 +30,14 @@ public class Student {
 
     public int getStudentNummer() {
         return studentNummer;
+    }
+
+    public void setVoornaam(String voornaam){
+        this.voornaam = voornaam;
+    }
+
+    public void setAchternaam(String achternaam){
+        this.achternaam = achternaam;
     }
 
     public String getVoornaam() {
