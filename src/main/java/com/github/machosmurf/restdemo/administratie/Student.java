@@ -13,4 +13,16 @@ public class Student {
         this.studentNummer = nextStudentNummer;
         nextStudentNummer++;
     }
+
+    public int getStudentNummer() {
+        return studentNummer;
+    }
+
+    public String getVoornaam() {
+        return voornaam;
+    }
+
+    public String getAchternaam(){
+        return achternaam;
+    }
 }
