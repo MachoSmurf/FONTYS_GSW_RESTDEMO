@@ -17,29 +17,6 @@ public class RestAPI {
         this.studentenAdministratie = studentenAdministratie;
     }
 
-    @RequestMapping(value = "/studenten/")
-    public List<Student> allStudents(){
-        return studentenAdministratie.getAll();
-    }
-
-    @RequestMapping(value = "/studenten/{id}")
-    public Student findStudentById(@PathVariable int id){
-        return studentenAdministratie.findStudentById(id);
-    }
-
-    @RequestMapping(value = "/studenten/{id}", method = RequestMethod.PUT)
-    public Student updateStudent(@PathVariable int id, @RequestBody Student student){
-        return studentenAdministratie.updateStudent(id, student);
-    }
-
-    @RequestMapping(value = "/studenten/", method = RequestMethod.POST)
-    public Student createStudent(@RequestBody Student student){
-        return studentenAdministratie.createStudent(student);
-    }
-
-    @RequestMapping(value = "/studenten/{id}", method = RequestMethod.DELETE)
-    public void deleteStudent(@PathVariable int id){
-        studentenAdministratie.deleteStudent(id);
-    }
+    g
 
 }
